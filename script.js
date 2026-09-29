@@ -1,0 +1,5 @@
+document.getElementById('year').textContent=new Date().getFullYear();
+const menu=document.querySelector('.menu'), nav=document.querySelector('.site-header nav');
+menu?.addEventListener('click',()=>{nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.position='absolute';nav.style.top='76px';nav.style.left='0';nav.style.right='0';nav.style.padding='20px';nav.style.background='#06265f';nav.style.flexDirection='column';});
+document.querySelectorAll('.site-header nav a').forEach(a=>a.addEventListener('click',()=>{if(innerWidth<=900)nav.style.display='none'}));
+document.getElementById('whatsappForm').addEventListener('submit',e=>{e.preventDefault();const name=document.getElementById('name').value.trim(),phone=document.getElementById('phone').value.trim(),service=document.getElementById('service').value,message=document.getElementById('message').value.trim();const text=`Hello OSEP Oil and Gas Limited,\n\nName: ${name}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`;window.open('https://wa.me/2348035591962?text='+encodeURIComponent(text),'_blank');});

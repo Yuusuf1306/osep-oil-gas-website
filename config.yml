@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "site_settings"
+    label: "Website Images"
+    files:
+      - label: "Manage Website Images"
+        name: "images"
+        file: "content/site.yml"
+        fields:
+          - label: "Hero Image"
+            name: "hero_image"
+            widget: "image"
+            choose_url: false
+            hint: "Main image at the top of the website."
+          - label: "About Image"
+            name: "about_image"
+            widget: "image"
+            choose_url: false
+            hint: "Main image in the About section."
+          - label: "Welding Image"
+            name: "welding_image"
+            widget: "image"
+            choose_url: false
+            hint: "Welding/industrial image used in the website."
+          - label: "Mission Image"
+            name: "mission_image"
+            widget: "image"
+            choose_url: false
+            hint: "Image displayed with Mission."
+          - label: "Vision Image"
+            name: "vision_image"
+            widget: "image"
+            choose_url: false
+            hint: "Image displayed with Vision."
+          - label: "Core Values Image"
+            name: "values_image"
+            widget: "image"
+            choose_url: false
+            hint: "Image displayed with Core Values."
+          - label: "Services Image"
+            name: "service_image"
+            widget: "image"
+            choose_url: false
+            hint: "Image used in the Downstream service card."
+          - label: "CASHES-Q Image"
+            name: "cashes_image"
+            widget: "image"
+            choose_url: false
+            hint: "Image used in the CASHES-Q section."
